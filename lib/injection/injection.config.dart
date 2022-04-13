@@ -18,9 +18,9 @@ const String _dev = 'dev';
 _i1.GetIt $initGetIt(_i1.GetIt get,
     {String? environment, _i2.EnvironmentFilter? environmentFilter}) {
   final gh = _i2.GetItHelper(get, environment, environmentFilter);
-  gh.singleton<_i3.DataRepositoryProd>(_i3.DataRepositoryProd(),
+  gh.lazySingleton<_i3.DataRepositoryProd>(() => _i3.DataRepositoryProd(),
       registerFor: {_prod});
-  gh.singleton<_i4.DataRepositoryProd>(_i4.DataRepositoryProd(),
+  gh.lazySingleton<_i4.DataRepositoryProd>(() => _i4.DataRepositoryProd(),
       registerFor: {_dev});
   return get;
 }
