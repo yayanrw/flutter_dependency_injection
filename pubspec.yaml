@@ -27,10 +27,13 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  build_runner: ^2.1.8
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  get_it: ^7.2.0
   injectable: ^1.5.3
+  injectable_generator: ^1.5.3
   provider: ^6.0.2
 
 dev_dependencies:
